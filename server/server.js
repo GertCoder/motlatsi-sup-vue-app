@@ -18,10 +18,6 @@ mongoose.connect(mongoUri, {
 .then(() => console.log('Database Connected...'))
 .catch(err => console.log(err));
 
-app.get('/', (req, res) => {
-    res.send('Hello World')
-});
-
 app.use('/api/listThings', listThingsRoutes);
 app.listen(PORT, () => {
     console.log(`Listening at http://localhost:${PORT}`)
