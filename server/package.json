@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend Server",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js --'client/'",
+    "client": "npm run serve --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Motlatsi Gert Mafatle",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "vue": "^3.2.31"
+  }
+}
