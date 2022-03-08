@@ -247,14 +247,6 @@ export default {
         },
          
         isFlagged(_id) {
-            // const response = await axios.get('/api/listThings/singleThing/' + _id);
-            // const thing = response.data;
-            // const isFlagged = thing.flagged;
-            // if(isFlagged === "yes") {
-            //     return true;
-            // } else { 
-            //     return false;
-            // }
             return this.flagged.includes(_id);
         },
         selectToEdit(thing) {
